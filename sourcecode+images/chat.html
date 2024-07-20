@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="chat.css"/>
+        <title>Chat with administrator</title>
+    </head>
+<div id="chat-container">
+    <div id="chat-header">
+      <h2>Chat với Admin</h2>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-input">
+      <input type="text" id="chat-message-input" placeholder="Nhập tin nhắn">
+      <button id="chat-send-button">Gửi</button>
+    </div>
+  </div>
+<script>
+const chatMessages = document.getElementById('chat-messages');
+const chatMessageInput = document.getElementById('chat-message-input');
+const chatSendButton = document.getElementById('chat-send-button');
+
+// Hàm để thêm tin nhắn vào chat
+function addChatMessage(message, isSelf) {
+const messageElement = document.createElement('div');
+messageElement.classList.add('message');
+if (isSelf) {
+messageElement.classList.add('self');
+}
+messageElement.textContent = message;
+chatMessages.appendChild(messageElement);
+chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Gửi tin nhắn khi click nút Gửi
+chatSendButton.addEventListener('click', () => {
+const message = chatMessageInput.value.trim();
+if (message) {
+addChatMessage(message, true); // Tin nhắn của bản thân
+chatMessageInput.value = ''; // Xóa nội dung tin nhắn
+
+// Gửi tin nhắn đến admin (mô phỏng)
+setTimeout(() => {
+addChatMessage('Đây là tin nhắn trả lời từ admin', false); // Tin nhắn của admin
+}, 1000);
+}
+});
+
+// Gửi tin nhắn khi nhấn Enter
+chatMessageInput.addEventListener('keypress', (event) => {
+if (event.key === 'Enter') {
+chatSendButton.click();
+}
+});
+</script>
+</html>

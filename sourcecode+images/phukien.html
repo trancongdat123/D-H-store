@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="google" content="no-translate"/>
+        <link rel="stylesheet" href="phukien.css"/>
+        <script src="script.js" type="text/javascript"></script>
+        <title>D&H Mobile store-phụ kiện</title>
+    </head>
+<body>
+    <div class="carousel-container">
+        <button class="prev1"><</button>
+        <div class="carousel1">
+            <div class="carousel-item1"><img id="carousel-item1" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Frame-427319876-1200x44-1.png" alt="Image 1"></div>
+            <div class="carousel-item1"><img id="carousel-item1" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg" alt="Image 2"></div>
+        </div>
+        <button class="next1">></button>
+    </div>
+    <script src="script.js"></script>
+    <header class="logo">
+        <h1><a href="giaodien.html"><img src="./img/Logo.jpg" alt="Logo"/></a></h1>
+    <div>
+        <form class="searching">
+        <input type="text" placeholder="Bạn cần tìm kiếm gì?"/>
+        <button id="button1">Tìm kiếm</button>
+    </form>
+    </div>
+    <form class="location">
+        <h4>Xem giá, tồn kho tại:</h4>
+        <select name="Locations">
+            <optgroup label="Khu vực phía Bắc">
+                <option selected value="Hà Nội">Hà Nội</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+                <option value="Quảng Ninh">Quảng Ninh</option>
+                <option value="Điện Biên">Điện Biên</option>
+                <option value="Hà Nam">Hà Nam</option>
+            </optgroup>
+            <optgroup label="Khu vực phía Nam">
+                <option value="Tp.Hồ Chí Minh">Tp.Hồ Chí Minh</option>
+                <option value="An Giang">An Giang</option>
+                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                <option value="Bạc Liêu">Bạc Liêu</option>
+                <option value="Bình Thuận">Bình Thuận</option>
+            </optgroup>
+        </select>
+    </form>
+    <div class="chat-with-staff"><a href="chat.html"><h3>Chat với Admin</h3></a></div>
+
+</header>
+    <nav>
+        <ul class="menu">
+            <li><a href="phone.html">Điện thoại</a></li>
+            <li><a href="laptop.html">Laptop</a></li>
+            <li><a href="table.html">Tablet</a></li>
+            <li><a href="#">Phụ kiện</a>          
+            </li>
+            <li><a href="#">Thiết bị lưu trữ</a>
+            </li>
+             <li><a href="#">Phụ kiện laptop</a>
+            </li>
+            <li><a href="#">Phụ kiện khác</a>
+            </li>
+            </li>
+            <li><a href="smartwacht.html">Smartwatch</a></li>
+            <li><a href="#">Thu, mua máy cũ</a>
+            </li>
+            <li><a href="#">Sim, thẻ cào</a></li>
+            <li><a href="#">Dịch vụ tiện ích</a>
+            </li>
+        </ul>  
+    </nav>
+
+    <footer>
+        <div class="slides">
+            <div class="list-img">           
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/06/banner/800x200-1200x300-1.jpg" alt="Image 1"></a></div>
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/05/banner/1200x300--2--1200x300.jpg" alt="Image 2"></a></div>
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/06/banner/800x200-800x200.png" alt="Image 3"></a></div>
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/06/banner/800x200-800x200-2.jpg" alt="Image 4"></a></div>               
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/05/banner/800x200-800x200-12.jpg" alt="Image 5"></a></div>               
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/06/banner/800x200-800x200-4.png" alt="Image 6"></a></div>               
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/03/banner/800---200-800x200.png" alt="Image 7"></a></div>
+                <div class="item-img"><a href="#"><img src="https://cdn.tgdd.vn/2024/03/banner/800x200-800x200-31.png" alt="Image 8"></a></div>
+
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            
+        </div>
+        <div class="sile2">            
+            <img src="https://cdn.tgdd.vn/2024/06/banner/1200x300-1200x300.jpg" alt="">
+            <img src="https://cdn.tgdd.vn/2024/06/banner/Group-427320083--1--1200x300.png" alt="">
+        </div>
+       
+    </footer>
+    <!-----------------script phan footer 1---------------->
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.item-img');
+            currentIndex = (index + slides.length) % slides.length;
+            document.querySelector('.list-img').style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        document.querySelector('.next').onclick = () => showSlide(currentIndex + 1);
+        document.querySelector('.prev').onclick = () => showSlide(currentIndex - 1);
+
+        document.addEventListener('DOMContentLoaded', () => showSlide(currentIndex));
+
+    </script>
+
+    <section class="phukien-categories">
+        <h2>Phụ kiện nổi bật</h2>
+        <div class="phukien-categories-details">
+        <article class="details">
+           <a href="#"> <img src="https://cdn.tgdd.vn/content/psdp-64x64.png" alt=""/>
+            <h3>Sạc dự phòng</h3></a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/cap-65x64-1.png" alt=""/>
+                <h3>Sạc, cáp</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/tai-nghe-64x64-1.png" alt=""/>
+                <h3>Tai nghe</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/loa-64x64-2.png" alt=""/>
+                <h3>Loa</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/Group-45921-64x64.png" alt=""/>
+                <h3>Camera</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/the-nho-64x68.png" alt=""/>
+                <h3>Thẻ nhớ</h3>        
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/tbm-64x64-1.png" alt=""/>
+                <h3>Thiết bị mạng</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/md-64x64.png" alt=""/>
+                <h3>Ốp lưng, miếng dán</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/chuot-64x64-2.png" alt=""/>
+                <h3>Chuột máy tính</h3>
+            </a>
+        </article>
+        <article class="details">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/content/ban-phim-64x64.png" alt=""/>
+                <h3>Bàn phím</h3>
+            </a>
+        </article>
+        </div>
+    </section>
+    <div class="ad"><a href="#"><img src="https://cdn.tgdd.vn/2024/06/banner/1200-200--1--1200x200.png" alt=""/></a></div>
+    <section class="main-content">
+        <h2>Phụ kiện giảm sâu</h2>
+        <section class="line1">
+        <article class="main-content-article">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/4728/321919/camera-ip-360-do-3mp-imou-ranger-rc-gk2cp-3c0wr-thumb-600x600.jpg" alt=""/>
+                <h3>Camera IP 360 Độ 3MP IMOU RANGER RC GK2CP-3C0WR</h3>
+                <h2>550.000đ</h2>
+                <p class="deleted-prices">650.000đ</p>
+                <div class="discount">-15%</div>
+            </a>
+        </article>
+        <article class="main-content-article">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/57/325769/pin-sac-du-phong-polymer-20000mah-10-5w-ava-plus-q7-thumb-600x600.jpg" alt=""/>
+                <h3>Pin sạc dự phòng Polymer 20000mAh 10.5W AVA+ Q7</h3>
+                <h2>450.000đ</h2>
+                <p class="deleted-prices">590.000đ</p>
+                <div class="discount">-23%</div>
+            </a>
+        </article>
+        <article class="main-content-article">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/2162/313884/loa-bluetooth-ava-plus-minipod-y23-thumb-2-600x600.jpg" alt=""/>
+                <h3>Loa Bluetooth AVA+ MiniPod Y23</h3>
+                <h2>90.000đ</h2>
+                <p class="deleted-prices">190.000đ</p>
+                <div class="discount">-52%</div>
+            </a>
+        </article>
+        <article class="main-content-article">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/86/311113/chuot-bluetooth-silent-logitech-m240-thumb-600x600.jpg" alt=""/>
+                <h3>Chuột Bluetooth Silent Logitech M240</h3>
+                <h2>320.000đ</h2>
+                <p class="deleted-prices">400.000đ</p>
+                <div class="discount">-20%</div>
+            </a>
+        </article>
+        <article class="main-content-article">
+            <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/4547/279466/co-day-gaming-asus-tuf-k1-thumb-600x600.jpeg" alt=""/>
+                <h3>Bàn Phím Có Dây Gaming Asus TUF K1</h3>
+                <h2>850.000đ</h2>
+                <p class="deleted-prices">990.000đ</p>
+                <div class="discount">-14%</div>
+            </a>
+        </article>
+        </section>
+        <section class="line2">
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/7923/303944/TimerThumb/tui-chong-soc-laptop-156-inch-togo-mem-(1).jpg" alt=""/>
+                    <h3>Túi chống sốc Laptop 15.6 inch Togo vải mềm</h3>
+                    <h2>90.000đ</h2>
+                    <p class="deleted-prices">150.000đ</p>
+                    <div class="discount">-40%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/4728/307175/camera-ip-360-do-1080p-imou-ranger-2c-ta22cp-thumb-2-600x600.jpg" alt=""/>
+                    <h3>Camera IP 360 Độ 2MP IMOU Ranger 2C TA22CP</h3>
+                    <h2>450.000đ</h2>
+                    <p class="deleted-prices">650.000đ</p>
+                    <div class="discount">-30%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/60/315058/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-600x600.jpg" alt=""/>
+                    <h3>Ốp lưng MagSafe cho iPhone 15 Pro Max Nhựa trong Apple</h3>
+                    <h2>1.090.000đ</h2>
+                    <p class="deleted-prices">1.430.000đ</p>
+                    <div class="discount">-23%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/2162/325330/loa-bluetooth-marshall-willen-kem-thumb-600x600.jpg" alt=""/>
+                    <h3>Loa Bluetooth Marshall Willen</h3>
+                    <h2>2.510.000đ</h2>
+                    <p class="deleted-prices">2.790.000đ</p>
+                    <div class="discount">-10%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/58/310590/cap-type-c-lightning-1m-baseus-explorer-cb000040-thumb-3-600x600.jpg" alt=""/>
+                    <h3>Cáp Type C - Lightning 1m Baseus Explorer CB000040</h3>
+                    <h2>105.000đ</h2>
+                    <p class="deleted-prices">350.000đ</p>
+                    <div class="discount">-70%</div>
+                </a>
+            </article>
+        </section>
+        <section class="line3">
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/9499/322610/adapter-sac-type-c-pd-20w-ava-cs-chg078-thumb-600x600.jpg" alt=""/>
+                    <h3>Adapter Sạc Type C PD 20W AVA+</h3>
+                    <h2>120.000đ</h2>
+                    <p class="deleted-prices">150.000đ</p>
+                    <div class="discount">-20%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/9499/318158/adapter-sac-type-c-pd-gan5s-30w-baseus-ccgan30s5-s-thumb-600x600.jpg" alt=""/>
+                    <h3>Adapter Sạc Type C PD GaN5S 30W Baseus</h3>
+                    <h2>270.000đ</h2>
+                    <p class="deleted-prices">420.000đ</p>
+                    <div class="discount">-35%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/58/321381/cap-type-c-lightning-1m-ava-l2206-thumb-600x600.jpg" alt=""/>
+                    <h3>Cáp Type C - Lightning 1m AVA+ L2206</h3>
+                    <h2>110.000đ</h2>
+                    <p class="deleted-prices">170.000đ</p>
+                    <div class="discount">-35%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/86/326734/chuot-khong-day-gaming-logitech-g502-x-plus-lightspeed-600x600.jpg" alt=""/>
+                    <h3>Chuột Không dây Gaming Logitech G502 X Plus Lightspeed</h3>
+                    <h2>3.290.000đ</h2>
+                    <p class="deleted-prices">3.890.000đ</p>
+                    <div class="discount">-15%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/2162/320853/loa-bluetooth-ava-go-z09-tb-600x600.jpg" alt=""/>
+                    <h3>Loa Bluetooth AVA+ Go Z09</h3>
+                    <h2>120.000đ</h2>
+                    <p class="deleted-prices">150.000đ</p>
+                    <div class="discount">-20%</div>
+                </a>
+            </article>
+        </section>
+        <section class="line4">
+            <article class="main-content-article">
+                <a href="#">
+                <img src="https://cdn.tgdd.vn/Products/Images/2162/325331/loa-bluetooth-marshall-emberton-den-600x600.jpg" alt=""/>
+                    <h3>Loa Bluetooth Marshall Emberton II</h3>
+                    <h2>4.490.000đ</h2>
+                    <p class="deleted-prices">4.990.000đ</p>
+                    <div class="discount">-10%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/54/236016/tai-nghe-bluetooth-airpods-2-apple-mv7n2-trang-200923-112201-600x600.jpg" alt=""/>
+                    <h3> AirPods 2 Lightning Charge Apple</h3>
+                    <h2>2.790.000đ</h2>
+                    <p class="deleted-prices">3.490.000đ</p>
+                    <div class="discount">-20%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/54/315014/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-thumb-1-600x600.jpg" alt=""/>
+                    <h3>AirPods Pro Gen 2 MagSafe Charge (USB-C) Apple</h3>
+                    <h2>5.690.000đ</h2>
+                    <p class="deleted-prices">6.200.000đ</p>
+                    <div class="discount">-8%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/57/310234/sac-du-phong-10000mah-typecpd-22-5w-baseus-ppmd10-cap-lightning-va-typec-trang-5.jpg" alt=""/>
+                    <h3>Pin sạc dự phòng Polymer 10000mAh Type C PD 22.5W Baseus Comet PPMD10</h3>
+                    <h2>620.000đ</h2>
+                    <p class="deleted-prices">1.100.000đ</p>
+                    <div class="discount">-43%</div>
+                </a>
+            </article>
+            <article class="main-content-article">
+                <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/57/325769/pin-sac-du-phong-polymer-20000mah-10-5w-ava-plus-q7-thumb-600x600.jpg" alt=""/>
+                    <h3>Pin sạc dự phòng Polymer 20000mAh 10.5W AVA+ Q7</h3>
+                    <h2>450.000đ</h2>
+                    <p class="deleted-prices">590.000đ</p>
+                    <div class="discount">-23%</div>
+                </a>
+            </article>
+        </section>
+    </section>
+
+    <footer class="ft">
+        <section class="content">
+            <p><a href="#">Tích điểm Quà tặng VIP</a></p>
+            <p><a href="#"> Lịch sử mua hàng</a></p>
+            <p><a href="#">Tìm hiểu về mua trả góp</a></p>
+            <p><a href="#">Chính sách bảo hành</a></p>
+            <div id="message" style="display: none;">
+                <p><a href="#">Chính sách đổi trả</a></p>
+                <p><a href="#">Giao hàng & Thanh toán</a></p>
+                <p><a href="#">Hướng dẫn mua online</a></p>
+                <p><a href="#">Phiếu mua hàng</a></p>
+                <p><a href="#">In hóa đơn điện tử</a></p>
+                <p><a href="#">Chính sách xử lý dữ liệu cá nhân</a></p>
+                <p><a href="#">Nội quy cửa hàng</a></p>
+                <p><a href="#">Chất lượng phục vụ</a></p>
+
+            </div>
+            <p id="hienthi" onclick="show()" style="cursor: pointer;">xem thêm...</p>
+        </section>
+        <!-----------xem them------------>
+        <script>
+            function show(){
+                document.getElementById('hienthi').style.display='none';
+                document.getElementById('message').style.display='block';
+            }
+        </script>
+        <section class="content">
+            <p><a href="#">Giới thiệu công ty (MWG.vn)</a></p>
+            <p><a href="#">Tuyển dụng</a></p>
+            <p><a href="#">Gửi góp ý và khiếu nại</a></p>
+            <p><a href="#">Tìm siêu thị</a></p>
+            <p><a href="#">Xem bản Mobile</a></p>
+        </section>
+        <section class="content">
+            <h3>Tổng đài hỗ trợ</h3>
+            <p>Gọi mua: <span>034 217 6457</span> (7:30 - 22:00) </p>
+            <p>Khiếu nại: <span>039 272 0398</span>(8:30 - 21:00) </p>
+            <p>Bảo hành: <span>038 302 2398</span>(7:30 - 21:00) </p>
+        </section>
+        <section class="content4">
+            <article class="sile1">
+                <a href="#"><img src="./img/facebook-color.svg" alt="facebook" style="left: 15px;"><p style="padding-left: 50px;">4000k Fan</p></a>
+                <a href="#"><img src="./img/youtube.png" alt="youtube">  <p> 789k Fan</p></a>
+                <a href="#"><img src="./img/7044033_zalo_icon.svg" alt="zalo">   <p>Zalo H&D</p></a>
+            </article>
+            <article class="sile4">
+                <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+                <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+                <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>
+                
+                <a href="#"><img src="https://tinnhiemmang.vn/handle_cert?id=thegioididong.com" alt=""style="width: 130px; height:50px;"></a>
+            </article>
+            <p style="padding: 20px 20px 30px 15px;">Website cùng tập đoàn</p>
+            <article class="sile3">
+                <a href="#"><img src="./img/Logo.jpg" alt="" style="padding-left:19px; ;width: ;130px; height: 100px;"></a>
+                <div>
+                    
+                    <a href="#"><img src="./img/topzone.png" alt=""></a>
+                    <a href="#"><img src="./img/dienmay.png" alt=""></a>
+                    <a href="#"><img src="./img/ava.png" alt=""></a>
+                    <a href="#"><img src="./img/vieclam.png" alt=""></a>
+                </div>
+
+            </article>
+        </section>
+    </footer>
+    <footer class="last">
+        © 2018. Công ty cổ phần Đạt & Hưng. GPDKKD: 0303217354 do sở KH & ĐT TP.Hà Nội cấp ngày 02/01/2013. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+        Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.Hà Đông, TP.Hà Nội. Địa chỉ liên hệ và gửi chứng từ: Số 18, ngõ 14, Vũ Hữu, phường Trung Văn, quận Nam Từ Liêm, TP.Hà Nội. Điện thoại: 032 3815960.
+        Email: cskh@Duyhung.com. Chịu trách nhiệm nội dung: Duy Hưng &  Công Đạt. Email: CongDat@Duyhung.com.
+    </footer>
+</body>
+</html>

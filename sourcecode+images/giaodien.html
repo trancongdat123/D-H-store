@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="google" content="no-translate"/>
+        <link rel="stylesheet" href="giaodien.css"/>
+        <script src="script.js"></script>
+        <title>D&H Mobile store</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+    $(window).scroll(function(){
+        if($(this).scrollTop()) $("#gototop").fadeIn();
+        else $("#gototop").fadeOut();
+
+        $("#gototop").click(function(){
+            $("html, body").animate({scrollTop: 0}, 300);
+        });
+    });
+});
+    </script>
+    </head>
+<body>
+    <div class="carousel-container">
+        <button class="prev1"><</button>
+        <div class="carousel1">
+            <div class="carousel-item1"><a href="voucher.html"><img id="carousel-item1" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Frame-427319876-1200x44-1.png" alt="Image 1"></a></div>
+            <div class="carousel-item1"><img id="carousel-item1" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top%20banner_Giao%20hang.svg" alt="Image 2"></div>
+        </div>
+        <button class="next1">></button>
+    </div>
+    <script src="script.js"></script>
+    <header class="logo">
+        <h1><a href="giaodien.html"><img src="./img/Logo.jpg" alt="Logo"/></a></h1>
+    <div style="padding-left: 50px;">
+        <form class="searching">
+        <input type="text" placeholder="Bạn cần tìm kiếm gì?"/>
+        <button id="button1">Tìm kiếm</button>
+    </form>
+    </div>
+    <form class="location">
+        <h4>Xem giá, tồn kho tại:</h4>
+        <select name="Locations">
+            <optgroup label="Khu vực phía Bắc">
+                <option selected value="Hà Nội">Hà Nội</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+                <option value="Quảng Ninh">Quảng Ninh</option>
+                <option value="Điện Biên">Điện Biên</option>
+                <option value="Hà Nam">Hà Nam</option>
+            </optgroup>
+            <optgroup label="Khu vực phía Nam">
+                <option value="Tp.Hồ Chí Minh">Tp.Hồ Chí Minh</option>
+                <option value="An Giang">An Giang</option>
+                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                <option value="Bạc Liêu">Bạc Liêu</option>
+                <option value="Bình Thuận">Bình Thuận</option>
+            </optgroup>
+        </select>
+    </form>
+    <div class="chat-with-staff"><a href="chat.html"><h3>Chat với Admin</h3></a></div>
+    <div class="log-in"><a href="dangnhap.html"><h3>Đăng nhập</h3></a></div>
+</header>
+    <nav>
+        <ul class="menu">
+            <li style="padding-left: 0px;"><a href="phone.html">Điện thoại</a></li>
+            <li><a href="laptop.html">Laptop</a></li>
+            <li><a href="table.html">Tablet</a></li>
+            <li><a href="phukien.html">Phụ kiện</a>
+                <ul  class="menu1">
+                    <li><a href="#">Phụ kiện di động</a>
+                        <ul>
+                            <li><a href="#">Sạc dự phòng</a></li>
+                            <li><a href="#">Hub, cáp chuyển đổi</a></li>
+                            <li><a href="#">Ốp lưng điện thoại, ốp máy tính bảng</a></li>
+                            <li><a href="#">Giá đỡ điện thoại</a></li>
+                            <li><a href="#">Miếng dán camera</a></li>
+                            <li><a href="#">Túi đựng Airpod</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Thiết bị âm thanh</a>
+                        <ul>
+                            <li><a href="#">Tai nghe bluetooth</a></li>
+                            <li><a href="#">Tai nghe dây</a></li>
+                            <li><a href="#">Loa</a></li>
+                            <li><a href="#">Micro</a></li>
+                            <li><a href="#">Thiết bị ghi âm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Thiết bị lưu trữ</a>
+                        <ul>
+                            <li><a href="#">Ổ cứng di động</a></li>
+                            <li><a href="#">Thẻ nhớ</a></li>
+                            <li><a href="#">USB</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Phụ kiện laptop</a>
+                        <ul>
+                            <li><a href="#">Chuột máy tính</a></li>
+                            <li><a href="#">Bàn phím</a></li>
+                            <li><a href="#">Router - thiết bị mạng</a></li>
+                            <li><a href="#">Balo, túi chống sốc</a></li>
+                            <li><a href="#">Giá đỡ laptop</a></li>
+                            <li><a href="#">Phần mềm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Phụ kiện khác</a>
+                        <ul>
+                            <li><a href="#">Pin tiểu</a></li>
+                            <li><a href="#">Pin máy ảnh</a></li>
+                            <li><a href="#">Phụ kiện ô tô</a></li>
+                            <li><a href="#">Máy chiếu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="smartwacht.html">Smartwatch</a></li>
+            <li><a href="#">Thu, mua máy cũ</a>
+                <ul class="menu1">
+                    <li><a href="#">Máy cũ giá rẻ</a></li>
+                    <li><a href="#">Thu cũ đổi mới</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sim, thẻ cào</a></li>
+            <li><a href="#">Dịch vụ tiện ích</a>
+                <ul class="menu1">
+                    <li><a href="#">Thanh toán hóa đơn</a>
+                        <ul>
+                            <li><a href="#">Đóng tiền trả góp</a></li>
+                            <li><a href="#">Đóng tiền điện</a></li>
+                            <li><a href="#">Đóng tiền nước</a></li>
+                            <li><a href="#">Đóng tiền NET FPT</a></li>
+                            <li><a href="#">Đóng tiền net, cáp VNPT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tài chính- bảo hiểm</a>
+                        <ul>
+                            <li><a href="#">Mua bảo hiểm xe máy, ô tô</a></li>
+                            <li><a href="">Đóng tiền bảo hiểm</a></li>
+                            <li><a href="">Mua gói truyển hình</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tiện ích viễn thông</a>
+                        <ul>
+                            <li><a href="#">Mua gói data 3G, 4G</a></li>
+                            <li><a href="#">Nạp tiền trả trước</a></li>
+                            <li><a href="#">Nạp tiền trả sau</a></li>
+                            <li><a href="#">Thẻ cào game</a></li>
+                            <li><a href="#">Thẻ cào điện thoại</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>  
+    </nav>
+        <section class="first">
+            <article>
+                <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/1920x450-1920x450-3.jpg" alt="Iphone15"/></a>
+            </article>
+        </section>
+        <div class="carousel-container">
+            <button class="prev2"><</button>
+            <div class="carousel2">
+                <div class="carousel-item2"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Laptop-Xin-via-MB-720x220.png" alt="Image 3"></div>
+                <div class="carousel-item2"><img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:10/plain/https://dashboard.cellphones.com.vn/storage/b2s-2024-right-banner-laptop.jpg" alt="Image 4"></div>
+                <div class="carousel-item2"><img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:10/plain/https://dashboard.cellphones.com.vn/storage/690x300_Rightbanner_Galaxy-M34-5G_04%20(2).png" alt="Image 5"></div>
+            </div>
+            <button class="next2">></button>
+        </div>
+        <section class="choose-categories">
+            <article class="categories">
+                <a href="phone.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="smartphone"/><p>Mua smartphones</p></a>
+            </article>
+            <article class="categories">
+                <a href="laptop.html"><img src="https://cdn.tgdd.vn/Files/2020/12/26/1316150/thumb_800x501.jpg" alt="laptop"/><p>Mua laptops</p></a>
+            </article>
+            <article class="categories">
+                <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Group-2085661307-120x120.png" alt="Phu_kien"/><p>Phụ kiện giảm tới 50%</p></a>
+            </article>
+            <article class="categories">
+                <a href="smartwacht.html"><img src="https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/smartwatch/bufferpage/thoi-trang-sanh-dieu-v2.png" alt="Smartwatch"/><p>Smartwatch xả kho giảm tới 35%</p></a>
+            </article>
+        </section>
+        <section class="second">
+            <article>
+                <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/05/banner/Frame-30-1200x100.png" alt="4G"/></a>
+            </article>
+        </section>
+        <section class="main-content1">
+            <h2>Các sản phẩm nổi bật:</h2>
+            <section class="line1">
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/318906/vivo-y17s-thumb-600x600.jpg" alt="vivo-y17s-thumb-600x600"/>
+                    <h3>Vivo Y17s 4GB/64GB</h3>
+                    <h2>2.990.000đ</h2>
+                    <p class="deleted-prices">3.350.000đ</p>
+                    <div class="discount-badges">-11%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7077/324733/huawei-band-9-thumb-den-1-600x600.jpg" alt="huawei-band-9-thumb-den-1-600x600"/>
+                    <h3>Huawei Band 9 (bản dây cao su)</h3>
+                    <h2>790.000đ</h2>
+                    <p class="deleted-prices">1.090.000đ</p>
+                    <div class="discount-badges">-27%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/54/321167/tai-nghe-bluetooth-true-wireless-xiaomi-redmi-buds-5-150124-083125-600x600.jpg" alt="tai-nghe-bluetooth-true-wireless-xiaomi-redmi-buds-5-150124-083125-600x600"/>
+                    <h3>Tai nghe Bluetooth True Wireless Xiaomi Redmi Buds 5</h3>
+                    <h2>950.000đ</h2>
+                    <p class="deleted-prices">990.000đ</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/307245/xiaomi-redmi-12-xanh-1.jpg" alt="Redmi-12"/>
+                    <h3>Xiaomi Redmi 12</h3>
+                    <h2>2.790.000đ</h2>
+                    <p class="deleted-prices">3.790.000đ</p>
+                    <div class="discount-badges">-26%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7077/306530/befit-watch-fit-hong-tn-600x600.jpg" alt="befit-watch-fit-hong-tn-600x600"/>
+                    <h3>BeFit WatchFit 46.7mm dây silicone</h3>
+                    <h2>490.000đ</h2>
+                    <p class="deleted-prices">890.000đ</p>
+                    <div class="discount">-44%</div>
+                </a>
+            </article>
+            </section><hr/>
+            <section class="line2">
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/313978/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg" alt="hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600"/>
+                    <h3>HP Pavillion 15 eg3098TU i3 13154 (8C5L9PA)</h3>
+                    <h2>11.990.000đ</h2>
+                    <p class="deleted-prices">15.290.000đ</p>
+                    <div class="discount">-11%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/9499/318156/adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600.jpg" alt="adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600"/>
+                    <h3>Sạc Samsung EP-T2510N</h3>
+                    <h2>400.000đ</h2>
+                    <p class="deleted-prices">550.000đ</p>
+                    <div class="discount">-27%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/305655/dell-vostro-3520-i3-v5i3614w1-thumb-600x600.jpg" alt="dell-vostro-3520-i3-v5i3614w1-thumb-600x600"/>
+                    <h3>Dell Vostro 15 3520 i3 1215U(V5I3614W1)</h3>
+                    <h2>10.490.000đ</h2>
+                    <p class="deleted-prices">12.990.000đ</p>
+                    <div class="discount">-19%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/57/310261/pin-sac-du-phong-10000mah-type-c-pd-qc3-0-22-5w-xmobile-t121-thumb-11.-600x600.jpg" alt="pin-sac-du-phong-10000mah-type-c-pd-qc3-0-22-5w-xmobile-t121-thumb-11"/>
+                    <h3>Xmobile 22.5W T121</h3>
+                    <h2>430.000đ</h2>
+                    <p class="deleted-prices">800.000đ</p>
+                    <div class="discount">-46%</div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumb-600x600.jpg" alt="samsung-galaxy-s24-ultra-grey-thumb-600x600"/>
+                    <h3>Samsung Galaxy S24 Ultra 5G 12GB/256GB</h3>
+                    <h2>32.990.000đ</h2>
+                    <p>Quà 4.000.000đ</p>
+                </a>
+            </article>
+            </section><hr/>
+            <section class="line3">
+                <article>
+                    <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/86/220368/chuot-gaming-asus-tuf-m3-den01-600x600.jpg" alt="chuot-gaming-asus-tuf-m3-den01-600x600"/>
+                    <h3>Chuột có dây Gaming Asus TUF M3</h3>
+                    <h2>380.000đ</h2>
+                    <p class="deleted-prices">550.000đ</p>
+                    <div class="discount">-30%</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/54/320250/tai-nghe-bluetooth-chup-tai-havit-h667bt-xanh-tn-600x600.jpg" alt="tai-nghe-bluetooth-chup-tai-havit-h667bt-xanh-tn-600x600"/>
+                    <h3>Tai nghe Bluetooth chụp tai HAVIT H667BT</h3>
+                    <h2>350.000đ</h2>
+                    <p class="deleted-prices">650.000đ</p>
+                    <div class="discount">-46%</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">                    
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/4547/273016/bluetooth-dareu-ek868-thumb-1-600x600.jpg" alt="bluetooth-dareu-ek868-thumb-1-600x600"/>
+                    <h3>Bàn phím Bluetooth DareU EK868</h3>
+                    <h2>590.000đ</h2>
+                    <h3 class="deleted-prices">1.170.000đ</h3>
+                    <div class="discount">-49%</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7077/309535/masstel-zmart-z8-49-mm-day-silicone-tn-600x600.jpg" alt="masstel-zmart-z8-49-mm-day-silicone-tn-600x600"/>
+                    <h3>Đồng hồ Zwatch Z8 45mm dây silicone</h3>
+                    <h2>490.000đ</h2>
+                    <h3 class="deleted-prices">690.000đ</h3>
+                    <div class="discount">-28%</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-pink-2-600x600.jpg" alt="iphone-13-pink-2-600x600"/>
+                    <h3>Iphone 13 128GB</h3>
+                    <p>Online giá rẻ quá!!!</p>
+                    <h2>14.290.000đ</h2>
+                    <div class="discount">-19%</div>
+                    </a>
+                </article>
+            </section>
+            <div class="see-all1">
+                <a href="sanphamnoibat.html"><h3>Xem tất cả sản phẩm nổi bật</h3></a>
+            </div>
+        </section>
+        <section class="main-content2">
+            <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Destop-1200x120-1.png" alt="Hot-deals"/></a>
+            <div class="carousel3">
+                <article class="phone-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="iphone-15-pro-max-blue-thumbnew-600x600"/>
+                    <h3>Iphone 15 Pro Max 256GB</h3>
+                    <p>Online giá rẻ quá</p>
+                    <h2>29.790.000đ</h2>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/522/325501/ipad-air-11-inch-m2-wifi-grey-thumb-600x600.jpg" alt="ipad-air-11-inch-m2-wifi-grey-thumb-600x600"/>
+                    <h3>Ipad Air 6 M2 11 inches WiFi 128 GB</h3>
+                    <h2>16.990.000đ</h2>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/309831/xiaomi-redmi-note-13-gold-thumb-600x600.jpg" alt="xiaomi-redmi-note-13-gold-thumb-600x600"/>
+                    <h3>Xiaomi Redmi Note 13 8GB/128GB</h3>
+                    <h2>4.990.000đ</h2>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/323567/vivo-v30e-nau-thumb-1-600x600.jpg" alt="vivo-v30e-nau-thumb-1-600x600"/>
+                    <h3>Vivo V30e 5G 8GB/256GB</h3>
+                    <h2>9.490.000đ</h2>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/317712/asus-vivobook-x1404za-i3-nk246w-thumb-600x600.jpg" alt="asus-vivobook-x1404za-i3-nk246w-thumb-600x600"/>
+                    <h3>Asus Vivobook X1404ZA i3 1215U(NK246W)</h3>
+                    <h2>9.790.000đ</h2>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/7923/303944/TimerThumb/tui-chong-soc-laptop-156-inch-togo-mem-(1).jpg" alt="tui-chong-soc-laptop-156-inch-togo-mem-"/>
+                    <h3>Túi chống sốc Laptop 15.6 inches Togo vải mềm</h3>
+                    <h2>90.000đ</h2>
+                    <p class="deleted-prices">150.000đ</p>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/86/308335/chuot-bluetooth-slient-dareu-lm166d-thumb-600x600.jpg" alt="chuot-bluetooth-slient-dareu-lm166d-thumb-600x600"/>
+                    <h3>Chuột Bluetooth Silent DareU LM166D</h3>
+                    <h2>330.000đ</h2>
+                    <p class="deleted-prices">400.000đ</p>
+                </a>
+            </article>
+            <article class="phone-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/4547/273011/co-day-dareu-ek87-den-thumb-600x600.jpg" alt="co-day-dareu-ek87-den-thumb-600x600"/>
+                    <h3>Bàn phím có dây DareU EK87</h3>
+                    <h2>490.000đ</h2>
+                    <p class="deleted-prices">490.000đ</p>
+                </a>
+            </article>
+            </div>
+        </section>
+        <section class="main-content3">
+            <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/campaign/Frame-1-1200x120-4.png" alt="Frame-knockout-desktop-226x500"/></a>
+            <div class="laptop-line1">
+            <article class="laptop-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/44/313084/hp-15s-fq5229tu-i3-8u237pa-glr-1.jpg" alt="hp-15s-fq5229tu-i3-8u237pa-glr-1"/>
+                    <h3>HP 15s fq5229TU i3 1215U(8U237PA)</h3>
+                    <p>Online giá rẻ quá</p>
+                    <h2>10.490.000đ</h2>
+                </a>
+            </article>
+            <article class="laptop-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/44/311178/asus-vivobook-go-15-e1504fa-r5-nj776w-glr-1.jpg" alt="asus-vivobook-go-15-e1504fa-r5-nj776w-glr-1"/>
+                    <h3>Asus Vivobook Go 15 E1504FA R5 7520U(NJ776W)</h3>
+                    <p>Online giá rẻ quá</p>
+                    <h2>12.490.000đ</h2>
+                </a>
+            </article>
+            <article class="laptop-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/44/313333/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-glr-3.jpg" alt="lenovo-ideapad-slim-3-15iah8-i5-83er00evn-glr-3"/>
+                    <h3>Lenovo Ideapad Slim 3 15IAH8 i5 12450H(83ER000EVN)</h3>
+                    <p>Online giá rẻ quá</p>
+                    <h2>13.890.000đ</h2>
+                </a>
+            </article>
+            <article class="laptop-details">
+                <a href="#">
+                    <img src="https://cdn.tgdd.vn/Products/Images/44/311016/msi-modern-15-b12mo-i5-628vn-2-1.jpg" alt="msi-modern-15-b12mo-i5-628vn-2-1"/>
+                    <h3>MSI Modern 15 B12MO i5 1235U(628VN)</h3>
+                    <p>Online giá rẻ quá</p>
+                    <h2>12.990.000đ</h2>
+                </a>
+            </article>
+            </div><hr/>
+            <div class="laptop-line2">
+                <article class="laptop-details">
+                    <a href="#">
+                        <img src="https://cdn.tgdd.vn/Products/Images/44/324735/acer-aspire-lite-15-51m-55nb-i5-nxkrssv001-2.jpg" alt="acer-aspire-lite-15-51m-55nb-i5-nxkrssv001-2"/>
+                        <h3>Acer Aspire 3 A315 510P 32EF i3 N305(NX.KDHSVKDHSV.001)</h3>
+                        <p>Online giá rẻ quá</p>
+                        <h2>8.790.000đ</h2>
+                    </a>
+                </article>
+                <article class="laptop-details">
+                    <a href="#">
+                        <img src="https://cdn.tgdd.vn/Products/Images/44/324735/acer-aspire-lite-15-51m-55nb-i5-nxkrssv001-2.jpg" alt="acer-aspire-lite-15-51m-55nb-i5-nxkrssv001-2"/>
+                        <h3>Acer Aspire Lite 15 51M 55NB i5 1155G7/8GB/512GB/Win11 (NX.KRSSV.001)</h3>
+                        <p>Online giá rẻ quá</p>
+                        <h2>11.290.000đ</h2>
+                    </a>
+                </article>
+                <article class="laptop-details">
+                    <a href="#">
+                        <img src="https://cdn.tgdd.vn/Products/Images/44/302266/dell-inspiron-15-3520-i3-i3u082w11blu-glr-1-1.jpg" alt="dell-inspiron-15-3520-i3-i3u082w11blu-glr-1-1"/>
+                        <h3>Dell Inspiron 15 3520 i3 1215U 8GB 256GB 120Hz OfficeHS Win11(i3U082W11BLU)</h3>
+                        <p>Online giá rẻ quá</p>
+                        <h2>10.690.000đ</h2>
+                    </a>
+                </article>
+                <article class="laptop-details">
+                    <a href="#">
+                        <img src="https://cdn.tgdd.vn/Products/Images/44/321436/acer-aspire-a315-44p-r9w8-r7-nxksjsv002-hinh-1.jpg" alt="acer-aspire-a315-44p-r9w8-r7-nxksjsv002-hinh-1"/>
+                        <h3>Acer Aspire 3 A315 44P R9W8 R7 5700U 8GB 512GB Win11(NX.KSJSV.002)</h3>
+                        <p>Online giá rẻ quá</p>
+                        <h2>11.390.000 đ</h2>
+                        <h4>(*Giảm thêm 400k cho sinh viên)</h4>
+                    </a>
+                </article>
+            </div>
+            <div class="see-all2">
+            <a href="laptop.html"><h3>Xem tất cả laptop</h3></a>
+            </div>
+        </section>
+        <section class="trending">
+            <h2>XU HƯỚNG MUA SẮM</h2>
+        <section class="buying-flow">
+            <article class="trending-box">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/Des-280x235.png" alt="Des-280x235"/>
+                    <h2>Iphone 13</h2>
+                    <h3>Chỉ từ 13.990.000đ</h3>
+                </a>
+            </article>
+            <article class="trending-box">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/04/banner/Xu-hu%CC%9Bo%CC%9B%CC%81ng-Desk-2-280x235.png" alt="Xu-hu%CC%9Bo%CC%9B%CC%81ng-Desk-2-280x235"/>
+                    <h2>Laptop Gaming Card RTX</h2>
+                    <h3>Chỉ từ 15.490.000đ</h3>
+                </a>
+            </article>
+            <article class="trending-box">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/CAMERA-Desk-280x235.png" alt="CAMERA-Desk-280x235"/>
+                    <h2>Mở bán Camera IMOU mới</h2>
+                    <h3>Chỉ từ 999.000đ</h3>
+                </a>
+            </article>
+            <article class="trending-box">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/xu-huong-280x235.png" alt="xu-huong-280x235"/>
+                    <h2>Galaxy Fit3 X Revive</h2>
+                    <h3>Chỉ từ 990.000đ</h3>
+                </a>
+            </article>
+        </section>
+        </section>
+        <section class="out-standing">
+            <h2>DANH MỤC NỔI BẬT:</h2>
+            <div class="out-standing-line1">
+                <article class="details">
+                    <a href="phone.html">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/64x64-128x128.png" alt="64x64-128x128"/>
+                    <p>Điện thoại</p></a>
+                </article>
+                <article class="details">
+                    <a href="laptop.html">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Laptop-129x129.png" alt="Laptop-129x129"/>
+                    <p>Laptops</p></a>
+                </article>
+                <article class="details">
+                   <a href="table.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/tablet-128x129-2.png" alt="tablet-128x129-2"/>
+                    <p>Tablets</p></a>
+                </article>
+                <article class="details">
+                    <a href="smartwacht.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-moi-128x129.png" alt="icon-moi-128x129"/>
+                        <p>Đồng hồ thông minh</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-may-cu-60x60.png" alt="icon-may-cu-60x60"/>
+                        <p>Máy cũ giá rẻ</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/chuot-may-tinh">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/chuot-128x129.png" alt="chuot-128x129"/>
+                        <p>Chuột máy tính</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/ban-phim-128x129.png" alt="ban-phim-128x129"/>
+                        <p>Bàn phím</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/op-lung-flipcover">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/64x64--4--128x128.png" alt="64x64--4--128x128"/>
+                        <p>  Ốp lưng</p>
+                    </a>
+                </article>
+            </div>
+            <div class="out-standing-line2">
+                <article class="details">
+                    <a href="https://www.thegioididong.com/loa-laptop">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Loa-128x128.png" alt="Loa-128x128"/>
+                        <p>Loa</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/tai-nghe">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Tainghe-128x129.png" alt="Tainghe-128x129"/>
+                        <p>Tai nghe</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/cap-dien-thoai">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Capsac-129x129.png" alt="Capsac-129x129"/>
+                        <p>Cáp sạc</p>
+                    </a>                
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/camera-giam-sat">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-camera-128x129.png" alt="icon-camera-128x129"/>
+                        <p>Camera</p>
+                    </a>
+                </article>
+                <article class="details">
+                    <a href="https://www.thegioididong.com/the-nho-dien-thoai">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/the-nho-icon-128x129.png" alt="the-nho-icon-128x129"/>
+                        <p>Thẻ nhớ</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section class="today-suggestion">
+            <h2>GỢI Ý HÔM NAY:</h2>
+            <div class="elements">
+            <article class="element" id="Myelement">
+                <a href="sanphamnoibat.html">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/goiy-1.png" alt="goiy-1"/>
+                    <h3>Cho bạn</h3>
+                </a>
+            </article>
+            <article class="element" id="mYelement">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/campaign/icon-laptop-gaming-desk-50x50-50x50-50x50-1.png" alt="icon-laptop-gaming-desk-50x50-50x50-50x50-1"/>
+                    <h3>Laptop gaming</h3>
+                </a>
+            </article>
+            <article class="element" id="myElement">
+                <a href="phukien.html">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/01/campaign/pk-50-50x50-50x50-2.webp" alt="pk-50-50x50-50x50-2"/>
+                    <h3>Phụ kiện giảm sốc</h3>
+                </a>
+            </article>
+            <article class="element" id="myeLement">
+                <a href="table.html">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/campaign/desk11-50x50-1-50x50-1-50x50.png" alt="desk11-50x50-1-50x50-1-50x50"/>
+                    <h3>Tablet giá rẻ</h3>
+                </a>
+            </article>
+            </div>
+        </section>
+        <section class="today-suggestion2">
+            <div class="today-suggestion-line1">
+            <article class="today-suggestion-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/322670/samsung-galaxy-a55-5g-tim-thumb-1-600x600.jpg" alt="samsung-galaxy-a55-5g-tim-thumb-1-600x600"/>
+                    <h4>Samsung galaxy A55 5G  8GB/256GB</h4>
+                    <h3>10.990.000đ</h3>
+                    <p>Quà 500.000đ</p>
+                </a>
+            </article>
+            <article class="today-suggestion-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-xanh-la-thumb-new-600x600.jpg" alt="iphone-13-xanh-la-thumb-new-600x600"/>
+                    <h4>Iphone 13 128GB</h4>
+                    <h3>13.890.000đ</h3>
+                </a>
+            </article>
+            <article class="today-suggestion-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/321895/oppo-reno11-f-purple-thumb-600x600.jpg" alt="oppo-reno11-f-purple-thumb-600x600"/>
+                    <h4>OPPO Reno11 F 5G 8GB/256GB Tím</h4>
+                    <h3>8.990.000đ</h3>
+                    <p>Quà 500.000đ</p>
+                </a>
+            </article>
+            <article class="today-suggestion-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/309831/xiaomi-redmi-note-13-gold-thumb-600x600.jpg" alt="xiaomi-redmi-note-13-gold-thumb-600x600"/>
+                    <h4>Xiaomi Redmi Note 13 8GB/128GB</h4>
+                    <h3>4.990.000đ</h3>
+                </a>
+            </article>
+            <article class="today-suggestion-details">
+                <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/325013/vivo-y18-xanh-trang-thumb-600x600.jpg" alt="vivo-y18-xanh-trang-thumb-600x600"/>
+                    <h4>Vivo Y18 8GB/128GB</h4>
+                    <h3>4.490.000đ</h3>
+                    <p>Quà tặng 300.000đ</p>
+                </a>
+            </article>
+            </div><hr/>
+            <div class="today-suggestion-line2">
+                <article class="today-suggestion-details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/324893/honor-x8b-green-thumb-1-600x600.jpg" alt="honor-x8b-green-thumb-1-600x600"/>
+                        <h4>HONOR X8b 8GB/512GB</h4>
+                        <h3>6.690.000đ</h3>
+                        <p>Quà tặng 990.000đ</p>
+                    </a>
+                </article>
+                <article class="today-suggestion-details">
+                    <a href="#">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/4728/319642/camera-ip-360-do-2mp-tiandy-tc-h322n-thumb-2-600x600.jpg" alt="camera-ip-360-do-2mp-tiandy-tc-h322n-thumb-2-600x600"/>
+                    <h4>Camera IP 360 Độ 2MP TIANDY TC-H322N</h4>
+                    <h3>390.000đ</h3>
+                </a>
+                </article>
+                <article class="today-suggestion-details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/316075/samsung-galaxy-a15-4g-vang-thumb-600x600.jpg" alt="samsung-galaxy-a15-4g-vang-thumb-600x600"/>
+                        <h4>Samsung galaxy A15 8GB/256GB</h4>
+                        <h3>5.590.000đ</h3>
+                        <p>Quà 600.000đ</p>
+                    </a>
+                </article>
+                <article class="today-suggestion-details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/522/320990/tcl-tab-10-gen-2-thumb-600x600.jpg" alt="tcl-tab-10-gen-2-thumb-600x600"/>
+                        <h4>TCL Tab10 Gen 2 4G 4GB/64GB</h4>
+                        <h3>3.290.000đ</h3>
+                    </a>
+                </article>
+                <article class="today-suggestion-details">
+                    <a href="#">
+                        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/2162/319442/loa-bluetooth-rezo-wooden-box-tb-1-600x600.jpg" alt="loa-bluetooth-rezo-wooden-box-tb-1-600x600"/>
+                        <h4>Loa Bluetooth Rezo Wooden Box</h4>
+                        <h3>490.000đ</h3>
+                    </a>
+                </article>
+            </div>
+            <div class="see-all3">
+                <a href="smartwacht.html"><h3>Xem thêm</h3></a>
+            </div>
+        </section>
+        <script>
+           const element = document.getElementById('Myelement');
+           element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = 'orange'; 
+        });
+           element.addEventListener('mouseout', () => {
+            element.style.backgroundColor = 'lightgrey'; 
+        });
+        const Element = document.getElementById('mYelement');
+        Element.addEventListener('mouseover', () => {
+            Element.style.backgroundColor = 'red'; 
+        });
+        Element.addEventListener('mouseout', () => {
+            Element.style.backgroundColor = 'lightgrey'; 
+        });
+        const eLement = document.getElementById('myElement');
+        eLement.addEventListener('mouseover', () => {
+            eLement.style.backgroundColor = 'yellow'; 
+        });
+        eLement.addEventListener('mouseout', () => {
+            eLement.style.backgroundColor = 'lightgrey'; 
+        });
+        const elEment = document.getElementById('myeLement');
+        elEment.addEventListener('mouseover', () => {
+            elEment.style.backgroundColor = 'aqua'; 
+        });
+        elEment.addEventListener('mouseout', () => {
+            elEment.style.backgroundColor = 'lightgrey'; 
+        });
+        </script>
+        <div class="Khuyen-mai">
+            <h2>KHUYẾN MÃI CHỈ CÓ TRÊN ONLINE</h2>
+            <a href="voucher.html"><img src="https://cdn.tgdd.vn/2024/06/banner/1200x150-1199x150-1.png" alt="1200x150-1199x150-1"/></a>
+            </div>
+        <section class="gadget">
+            <h2>DỊCH VỤ TIỆN ÍCH</h2>
+            <div class="gadget-line">
+            <article class="gadget-details">
+                <a href="#">
+                    <h3>Mua mã thẻ cào</h3>
+                    <p><h4 class="giam2">Giảm 2%</h4> cho mệnh giá từ 100k trở lên</p>
+                </a>
+            </article>
+            <article class="gadget-details">
+                <a href="#">
+                    <h3>Dịch vụ đóng tiền</h3>
+                    <p>Điện, Nước, Trả góp, Internet, Cước điện thoại trả sau</p>
+                </a>
+            </article>
+            <article class="gadget-details">
+                <a href="#">
+                    <h3>Mua thẻ game</h3>
+                    <p><h4 class="giam2">Giảm 2%</h4> cho tất cả nhà mạng, áp dụng cho mệnh giá từ 300k trở lên</p>
+                </a>
+            </article>
+            <article class="gadget-details">
+                <a href="#">
+                    <h3>Office bản quyền</h3>
+                    <p>Mua Microsoft Office chỉ từ 950k</p>
+                </a>
+            </article>
+            </div>
+        </section>
+        <div class="tech">
+        <section class="tech-news">
+        <div class="title-news">
+            <h2>24H CÔNG NGHỆ</h2>
+            <a href="#"><h3>XEM TẤT CẢ ></h3></a>
+        </div>
+        <div class="news-details">
+            <article class="tech-news-details">
+            <a href="https://baoquangninh.vn/7-nang-cap-lon-cua-iphone-16-so-voi-iphone-15-3305264.html">
+                <img src="https://i1-sohoa.vnecdn.net/2024/06/20/iphone-16-camera-lozenge-2-col-8911-6800-1718877015.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=6HtB-N2F_sEe8NfvU-X2Ig" alt="iphone-16-camera-lozenge-2-col-8911-6800-1718877015"/>
+                <h3>7 nâng cấp lớn của Iphone 16 so với người tiền nhiệm</h3>
+                <p>Iphone 16 phiên bản tiêu chuẩn sẽ hỗ trợ Apple intelligence, chip A18, nút bấm mới, cụm camera thiết kế lại...</p>
+            </a>
+            </article>
+            <article class="tech-news-details">
+                <a href="https://genk.vn/tin-buon-cua-samsung-lai-tro-thanh-tin-vui-voi-nguoi-mua-galaxy-s25-20240625194410432.chn">
+                    <img src="https://genk.mediacdn.vn/thumb_w/640/139269124445442048/2024/6/25/samsung-galaxy-s23-snapdragon-8-gen-2-for-galaxy-17193196593091971885583.jpg" alt="samsung-galaxy-s23-snapdragon-8-gen-2-for-galaxy-17193196593091971885583"/>
+                    <h3>Tin buồn của Samsung lại trở thành tin vui với người mua Galaxy S25</h3>
+                    <p>Những thông tin rò rỉ đầu tiên của Galaxy S25 đã xuất hiện, mặc dù phải nửa năm nữa thì chiếc máy này mới chính thức ra mắt...</p>
+                </a>
+            </article>
+            <article class="tech-news-details">
+                <a href="https://vnexpress.net/vng-mo-trung-tam-du-lieu-ai-cloud-tai-thai-lan-4762218.html">
+                    <img src="https://i1-sohoa.vnecdn.net/2024/06/25/2-1719276949-5824-1719277004.png?w=240&h=144&q=100&dpr=2&fit=crop&s=CmtvRNTfx81OvCQycbzk2A" alt="vng-img"/>
+                    <h3>VNG mở trung tâm dữ liệu AI Cloud tại Thái Lan</h3>
+                    <p>GreenNode, đơn vị kinh doanh AI Cloud thuộc VNG hợp tác Nvidia khai trương trung tâm xử lý dữ liệu AI quy mô tại Bangkok, hôm 24/6...</p>
+                </a>
+            </article>
+        </div>
+        </section>
+        <div class="ad"><a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/06/banner/760x400--1--570x300-1.png" alt="760x400--1--570x300-1"/></a></div>
+    </div>
+    <section class="brands">
+        <h2>CHUYÊN TRANG THƯƠNG HIỆU</h2>
+        <div class="brand-images">
+        <article class="brand-details">
+            <a href="#">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2024/01/banner/chuyentrang-appleDT-390x210.png" alt="chuyentrang-appleDT-390x210"/>
+            </a>
+        </article>
+        <article class="brand-details">
+            <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/08/banner/chuyentrang-HP-390x210.png" alt="chuyentrang-HP-390x210"/></a>
+        </article>
+        <article class="brand-details">
+            <a href="#"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/08/banner/chuyentrang-lenovo-390x210-1.png" alt="chuyentrang-lenovo-390x210-1"/></a>
+        </article>
+        </div>
+    </section>
+    
+    <footer class="ft">
+        <section class="content">
+            <p><a href="#">Tích điểm Quà tặng VIP</a></p>
+            <p><a href="#"> Lịch sử mua hàng</a></p>
+            <p><a href="#">Tìm hiểu về mua trả góp</a></p>
+            <p><a href="#">Chính sách bảo hành</a></p>
+            <div id="message" style="display: none;">
+                <p><a href="#">Chính sách đổi trả</a></p>
+                <p><a href="#">Giao hàng & Thanh toán</a></p>
+                <p><a href="#">Hướng dẫn mua online</a></p>
+                <p><a href="#">Phiếu mua hàng</a></p>
+                <p><a href="#">In hóa đơn điện tử</a></p>
+                <p><a href="#">Chính sách xử lý dữ liệu cá nhân</a></p>
+                <p><a href="#">Nội quy cửa hàng</a></p>
+                <p><a href="#">Chất lượng phục vụ</a></p>
+
+            </div>
+            <p id="hienthi" onclick="show()" style="cursor: pointer;">xem thêm...</p>
+        </section>
+        <!-----------xem them------------>
+        <script>
+            function show(){
+                document.getElementById('hienthi').style.display='none';
+                document.getElementById('message').style.display='block';
+            }
+        </script>
+        <section class="content">
+            <p><a href="#">Giới thiệu công ty (MWG.vn)</a></p>
+            <p><a href="#">Tuyển dụng</a></p>
+            <p><a href="#">Gửi góp ý và khiếu nại</a></p>
+            <p><a href="#">Tìm siêu thị</a></p>
+            <p><a href="#">Xem bản Mobile</a></p>
+        </section>
+        <section class="content">
+            <h3>Tổng đài hỗ trợ</h3>
+            <p>Gọi mua: <span>034 217 6457</span> (7:30 - 22:00) </p>
+            <p>Khiếu nại: <span>039 272 0398</span>(8:30 - 21:00) </p>
+            <p>Bảo hành: <span>038 302 2398</span>(7:30 - 21:00) </p>
+        </section>
+        <section class="content4">
+            <article class="sile1">
+                <a href="#"><img src="./img/facebook-color.svg" alt="facebook" style="left: 15px;"><p style="padding-left: 50px;">4000k Fan</p></a>
+                <a href="#"><img src="./img/youtube.png" alt="youtube">  <p> 789k Fan</p></a>
+                <a href="#"><img src="./img/7044033_zalo_icon.svg" alt="zalo">   <p>Zalo H&D</p></a>
+            </article>
+            <article class="sile2">
+                <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+                <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+                <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>
+                
+                <a href="#"><img src="https://tinnhiemmang.vn/handle_cert?id=thegioididong.com" alt=""style="width: 130px; height:50px;"></a>
+            </article>
+            <p style="padding: 20px 20px 30px 15px;">Website cùng tập đoàn</p>
+            <article class="sile3">
+                <a href="#"><img src="./img/Logo.jpg" alt="" style="padding-left:19px; ;width: ;130px; height: 100px;"></a>
+                <div>
+                    
+                    <a href="#"><img src="./img/topzone.png" alt=""></a>
+                    <a href="#"><img src="./img/dienmay.png" alt=""></a>
+                    <a href="#"><img src="./img/ava.png" alt=""></a>
+                    <a href="#"><img src="./img/vieclam.png" alt=""></a>
+                </div>
+
+            </article>
+        </section>
+    </footer>
+    <footer class="last">
+        © 2018. Công ty cổ phần Đạt & Hưng. GPDKKD: 0303217354 do sở KH & ĐT TP.Hà Nội cấp ngày 02/01/2013. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+        Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.Hà Đông, TP.Hà Nội. Địa chỉ liên hệ và gửi chứng từ: Số 18, ngõ 14, Vũ Hữu, phường Trung Văn, quận Nam Từ Liêm, TP.Hà Nội. Điện thoại: 032 3815960.
+        Email: cskh@Duyhung.com. Chịu trách nhiệm nội dung: Duy Hưng &  Công Đạt. Email: CongDat@Duyhung.com.
+    </footer>
+        <div id="gototop">
+            <ion-icon name="chevron-icon">^</ion-icon>    
+          </div>
+    </body>
+</html>
